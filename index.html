@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Апельсин Лаунж – центр паровых коктейлей в Балашихе</title>
+<meta name="description" content="Апельсин Лаунж: паровые коктейли на чаше из апельсина, грейпфрута, ананаса и кокоса, пицца, PlayStation и матчи на большом экране. Балашиха, ул. Ситникова, 6. +7 (967) 284-89-99">
+<meta name="theme-color" content="#141111">
+<meta property="og:title" content="Апельсин Лаунж – центр паровых коктейлей">
+<meta property="og:description" content="Паровые коктейли, пицца и PlayStation. Балашиха, ул. Ситникова, 6">
+<meta property="og:image" content="img/a001.webp">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  document.documentElement.className += ' js';
+  try { if (localStorage.getItem('apelsin-age') === 'yes') document.documentElement.className += ' age-ok'; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Апельсин Лаунж",
+  "telephone": "+79672848999",
+  "address": {"@type": "PostalAddress", "streetAddress": "ул. Ситникова, 6", "addressLocality": "Балашиха", "addressRegion": "Московская область", "addressCountry": "RU"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 55.789917, "longitude": 37.881808},
+  "openingHours": ["Mo-Th 14:00-02:00", "Fr-Sa 14:00-03:00", "Su 14:00-02:00"],
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "196"}
+}
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-18" viewBox="0 0 48 48"><text x="24" y="30" text-anchor="middle" font-family="Unbounded, sans-serif" font-weight="700" font-size="15" fill="currentColor">18+</text></symbol>
+  <symbol id="i-cup" viewBox="0 0 48 48"><path d="M12 20h20v8a8 8 0 0 1-8 8h-4a8 8 0 0 1-8-8v-8zm20 3h3a4 4 0 0 1 0 8h-3.5M18 10c-2 2 2 4 0 6m6-6c-2 2 2 4 0 6m6-6c-2 2 2 4 0 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pad" viewBox="0 0 48 48"><path d="M16 17h16c5 0 8 4 8 10 0 5-2 7-4 7-3 0-4-4-7-4h-10c-3 0-4 4-7 4-2 0-4-2-4-7 0-6 3-10 8-10zm-2 7h6m-3-3v6m13-2h.1m4-3h.1" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 48 48"><path d="M9 20a22 22 0 0 1 30 0m-25 5a15 15 0 0 1 20 0m-15 5a8 8 0 0 1 10 0" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="24" cy="35" r="2.4" fill="currentColor"/></symbol>
+</svg>
+
+<div class="age" id="age" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+  <div class="age__box">
+    <img src="img/mark-orange.svg" alt="" class="age__mark" width="80" height="98">
+    <div id="ageAsk">
+      <p class="age__title" id="ageTitle">Вам уже есть 18?</p>
+      <p class="age__text">На&nbsp;сайте есть информация о&nbsp;кальянах и&nbsp;алкоголе, поэтому он&nbsp;только для взрослых гостей.</p>
+      <div class="age__btns">
+        <button type="button" class="btn btn--orange" id="ageYes">Да, мне есть 18</button>
+        <button type="button" class="btn btn--line" id="ageNo">Нет</button>
+      </div>
+    </div>
+    <div id="ageDeny" hidden>
+      <p class="age__title">Будем ждать вас позже</p>
+      <p class="age__text">К&nbsp;сожалению, сайт доступен только совершеннолетним.</p>
+    </div>
+  </div>
+</div>
+
+<header class="top">
+  <div class="top__in">
+    <a href="#top" class="top__logo" aria-label="Апельсин Лаунж"><img src="img/mark-orange.svg" alt="" width="28" height="34"><img src="img/word1-light.svg" alt="Апельсин" class="top__word" width="120" height="20"></a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#steam">Паровые коктейли</a>
+      <a href="#fun">Досуг</a>
+      <a href="#food">Пицца и&nbsp;бар</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+      <a href="tel:+79672848999" class="nav__phone">+7 (967) 284-89-99</a>
+    </nav>
+    <a href="tel:+79672848999" class="btn btn--orange btn--sm top__cta">Забронировать</a>
+    <button class="burger" id="burger" aria-label="Меню навигации" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO: две половины, как в логотипе -->
+<section class="hero">
+  <div class="hero__split" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <div class="hero__text">
+      <p class="status" id="status">Балашиха · ул. Ситникова, 6</p>
+      <h1 class="hero__logo">
+        <img src="img/word1.svg" alt="Апельсин" class="hero__w1" width="399" height="67">
+        <img src="img/mark.svg" alt="" class="hero__mark" width="376" height="461">
+        <img src="img/word2.svg" alt="Лаунж" class="hero__w2" width="280" height="84">
+      </h1>
+      <p class="hero__kicker">Центр паровых коктейлей</p>
+      <p class="hero__lead">Вкусно, дымно и&nbsp;долго. Кальян курится полтора-два часа, а&nbsp;мастер сам подойдёт сменить угли.</p>
+      <div class="hero__actions">
+        <a href="tel:+79672848999" class="btn btn--dark">Забронировать стол</a>
+        <a href="#steam" class="btn btn--ghost-dark">Меню коктейлей</a>
+      </div>
+    </div>
+    <figure class="hero__photo">
+      <img src="img/a001.webp" alt="Неоновая вывеска APELSIN LOUNGE" fetchpriority="high">
+      <a class="hero__rating" href="https://yandex.ru/maps/org/tsentr_parovykh_kokteyley_apelsin_laundzh/71040804194/reviews/" target="_blank" rel="noopener"><b>4,8</b><span>★★★★★<br>196 оценок</span></a>
+    </figure>
+  </div>
+</section>
+
+<!-- ICONS как на их вывеске -->
+<section class="icons">
+  <div class="wrap">
+    <ul class="icons__row">
+      <li><svg><use href="#i-18"/></svg><span>Только для взрослых</span></li>
+      <li><svg><use href="#i-cup"/></svg><span>Чай и&nbsp;лимонады</span></li>
+      <li><svg><use href="#i-pad"/></svg><span>PlayStation</span></li>
+      <li><svg><use href="#i-wifi"/></svg><span>Бесплатный Wi-Fi</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- STEAM COCKTAILS -->
+<section class="steam" id="steam">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="label">Меню</p>
+      <h2 class="h2">Паровые <span>коктейли</span></h2>
+      <p class="lead">Выберите, на&nbsp;чём курить. Чем экзотичнее чаша, тем ярче вкус.</p>
+    </div>
+    <div class="cocktails">
+      <article class="ck reveal">
+        <p class="ck__bowl">Чаша</p>
+        <h3>Классический</h3>
+        <p class="ck__d">Лучшие миксы от&nbsp;наших мастеров.</p>
+        <p class="ck__p">1&#8239;700&nbsp;₽</p>
+      </article>
+      <article class="ck reveal">
+        <p class="ck__bowl">Сигарный лист</p>
+        <h3>WTO</h3>
+        <p class="ck__d">Крафтовый табак для ценителей.</p>
+        <p class="ck__p">2&#8239;100&nbsp;₽</p>
+      </article>
+      <article class="ck ck--orange reveal">
+        <p class="ck__bowl">Чаша из&nbsp;фрукта</p>
+        <h3>На&nbsp;апельсине</h3>
+        <p class="ck__d">Наш фирменный фрукт.</p>
+        <p class="ck__p">2&#8239;200&nbsp;₽</p>
+      </article>
+      <article class="ck reveal">
+        <p class="ck__bowl">Чаша из&nbsp;фрукта</p>
+        <h3>На&nbsp;грейпфруте</h3>
+        <p class="ck__d">Горчинка и&nbsp;свежесть.</p>
+        <p class="ck__p">2&#8239;800&nbsp;₽</p>
+      </article>
+      <article class="ck reveal">
+        <p class="ck__bowl">Чаша из&nbsp;фрукта</p>
+        <h3>На&nbsp;ананасе</h3>
+        <p class="ck__d">Мягкий тропический дым.</p>
+        <p class="ck__p">2&#8239;800&nbsp;₽</p>
+      </article>
+      <article class="ck reveal">
+        <p class="ck__bowl">Чаша из&nbsp;фрукта</p>
+        <h3>На&nbsp;кокосе</h3>
+        <p class="ck__d">Сливочный и&nbsp;плотный.</p>
+        <p class="ck__p">3&#8239;500&nbsp;₽</p>
+      </article>
+      <article class="ck ck--signature reveal">
+        <img src="img/a015.webp" alt="Кальян с чашей из апельсина в дыму" loading="lazy">
+        <div>
+          <p class="ck__bowl">Фирменный · на&nbsp;кокосе</p>
+          <h3>Коктейль от&nbsp;мастера</h3>
+          <p class="ck__d">Самые дорогие компоненты и&nbsp;миксы, которые вы&nbsp;больше нигде не&nbsp;попробуете.</p>
+          <p class="ck__p">4&#8239;000&nbsp;₽</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FUN -->
+<section class="fun" id="fun">
+  <div class="wrap fun__grid">
+    <div>
+      <div class="reveal">
+        <p class="label label--dark">Досуг</p>
+        <h2 class="h2 h2--dark">Не&nbsp;только <span>кальян</span></h2>
+      </div>
+      <ul class="fun__list">
+        <li class="reveal"><b>PlayStation</b><span>Поиграть в&nbsp;плойку можно за&nbsp;очень разумную цену.</span></li>
+        <li class="reveal"><b>Футбол, хоккей, UFC</b><span>Трансляции на&nbsp;огромном экране, как в&nbsp;кинотеатре.</span></li>
+        <li class="reveal"><b>Настольные игры</b><span>Для компании, которая пришла надолго.</span></li>
+        <li class="reveal"><b>Зона со&nbsp;шторкой</b><span>Уютный угол для работы за&nbsp;ноутбуком или разговора без лишних ушей.</span></li>
+        <li class="reveal"><b>День рождения</b><span>Небольшой зал, в&nbsp;котором свои люди. Звоните, всё обсудим.</span></li>
+      </ul>
+    </div>
+    <div class="fun__pics">
+      <figure class="reveal"><img src="img/a019.webp" alt="Большой телевизор с футболом и диван" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/a017.webp" alt="Серые кожаные диваны на клетчатом ковре" loading="lazy"></figure>
+      <figure class="reveal"><img src="img/a008.webp" alt="Настольная игра на столе" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD & BAR -->
+<section class="food" id="food">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="label">Пицца и&nbsp;бар</p>
+      <h2 class="h2">Любая пицца <span>600&nbsp;₽</span></h2>
+    </div>
+    <ul class="pizzas">
+      <li class="reveal"><b>Маргарита песто</b><span>моцарелла и&nbsp;итальянский соус песто</span></li>
+      <li class="reveal"><b>Пепперони</b><span>двойная порция пепперони, орегано</span></li>
+      <li class="reveal"><b>4 сыра</b><span>чеддер, дор блю и&nbsp;моцарелла</span></li>
+      <li class="reveal"><b>Супермясная</b><span>бекон, ветчина из&nbsp;индейки, пепперони, сальса</span></li>
+      <li class="reveal"><b>Карбонара</b><span>сливочный соус, бекон, шампиньоны, красный лук</span></li>
+      <li class="reveal"><b>Грибная</b><span>шампиньоны и&nbsp;лесные грибы с&nbsp;трюфельным маслом</span></li>
+      <li class="reveal"><b>BBQ</b><span>бекон, красный лук и&nbsp;соус барбекю</span></li>
+      <li class="reveal"><b>Овощная</b><span>шампиньоны, перец, фасоль, кукуруза, песто</span></li>
+    </ul>
+    <div class="bar">
+      <div class="bar__col reveal">
+        <h3>Напитки</h3>
+        <ul class="plist">
+          <li><span>Лимонад крафт</span><i></i><b>600&nbsp;₽</b></li>
+          <li><span>Coca-Cola 0,33</span><i></i><b>300&nbsp;₽</b></li>
+          <li><span>Frustyle 0,33</span><i></i><b>200&nbsp;₽</b></li>
+          <li><span>Холодный чай Lipton</span><i></i><b>250&nbsp;₽</b></li>
+          <li><span>Аква Минерале 0,5</span><i></i><b>200&nbsp;₽</b></li>
+          <li><span>Red Bull 0,25</span><i></i><b>400&nbsp;₽</b></li>
+          <li><span>Adrenaline Rush 0,25</span><i></i><b>350&nbsp;₽</b></li>
+          <li><span>Пиво или сидр</span><i></i><b>300&nbsp;₽</b></li>
+        </ul>
+      </div>
+      <div class="bar__col bar__col--yellow reveal">
+        <h3>Можно со&nbsp;своим</h3>
+        <p>Приносите свой алкоголь, берём символический сбор. Еду тоже можно заказать сюда.</p>
+        <img src="img/a012.webp" alt="Два лимонада с апельсином" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="reviews__head reveal">
+      <div>
+        <p class="label">Отзывы</p>
+        <h2 class="h2">Второй <span>дом</span></h2>
+      </div>
+      <div class="score"><b>4,8</b><span>★★★★★<br>110 отзывов · 196 оценок<br>на&nbsp;Яндекс Картах</span></div>
+    </div>
+    <div class="quotes">
+      <figure class="q q--big reveal">
+        <blockquote>За&nbsp;пять лет стабильного посещения могу с&nbsp;уверенностью сказать: это не&nbsp;просто кальянная, а&nbsp;второй дом.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 4 апреля 2025</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Кальяны всегда вкусные и&nbsp;долгие! Мастера очень чётко сочетают ароматы и&nbsp;поддерживают кальян «живым».</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 11 июня</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Ходим больше года, цены очень приятные. Персонал просто душки, всегда уделят время и&nbsp;поболтают.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 23 июля</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Сидели до&nbsp;3 часов ночи в&nbsp;субботу, не&nbsp;могли уйти. Под конец ещё и&nbsp;пиццу взяли, вкуснятина.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 4 апреля 2025</span></figcaption>
+      </figure>
+    </div>
+    <a class="more" href="https://yandex.ru/maps/org/tsentr_parovykh_kokteyley_apelsin_laundzh/71040804194/reviews/" target="_blank" rel="noopener">Все отзывы на&nbsp;Яндекс Картах&nbsp;→</a>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contacts">
+  <div class="wrap contacts__grid">
+    <div class="reveal">
+      <p class="label">Контакты</p>
+      <h2 class="h2">Ждём <span>на&nbsp;Ситникова</span></h2>
+      <dl class="info">
+        <div><dt>Адрес</dt><dd>Балашиха, ул. Ситникова, 6<span class="sub">остановка «Улица Ситникова» в&nbsp;190 м</span></dd></div>
+        <div><dt>Телефоны</dt><dd><a href="tel:+79672848999">+7 (967) 284-89-99</a><br><a href="tel:+79999714214">+7 (999) 971-42-14</a></dd></div>
+        <div><dt>Оплата</dt><dd>Карта, наличные, СБП, перевод</dd></div>
+      </dl>
+      <ul class="week" id="week" aria-label="Часы работы"></ul>
+      <div class="contacts__actions">
+        <a href="tel:+79672848999" class="btn btn--orange">Позвонить</a>
+        <a href="https://vk.ru/apelsin_lounge" target="_blank" rel="noopener" class="btn btn--line">ВКонтакте</a>
+        <a href="https://yandex.ru/maps/org/tsentr_parovykh_kokteyley_apelsin_laundzh/71040804194/" target="_blank" rel="noopener" class="btn btn--line">Маршрут</a>
+      </div>
+      <figure class="find">
+        <img src="img/a031.webp" alt="Вход в Апельсин Лаунж с оранжевой вывеской" loading="lazy">
+        <figcaption>Вход с&nbsp;улицы, ищите оранжевую вывеску с&nbsp;долькой апельсина на&nbsp;фасаде дома.</figcaption>
+      </figure>
+    </div>
+    <div class="map reveal">
+      <iframe title="Апельсин Лаунж на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=37.881808%2C55.789917&z=16&pt=37.881808%2C55.789917%2Cpm2orl" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <div class="footer__logo"><img src="img/mark-orange.svg" alt="" width="40" height="49"><img src="img/word1-light.svg" alt="Апельсин" width="140" height="23"><img src="img/word2-light.svg" alt="Лаунж" width="98" height="27"></div>
+    <nav class="footer__nav" aria-label="Разделы">
+      <a href="#steam">Коктейли</a><a href="#fun">Досуг</a><a href="#food">Пицца и&nbsp;бар</a><a href="#contacts">Контакты</a>
+    </nav>
+    <div class="footer__meta">
+      <a href="tel:+79672848999">+7 (967) 284-89-99</a>
+      <span>Балашиха, ул. Ситникова, 6</span>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <span>© Апельсин Лаунж · центр паровых коктейлей</span>
+    <span>18+ · Информация на&nbsp;сайте носит справочный характер и&nbsp;не&nbsp;является рекламой. Чрезмерное употребление алкоголя вредит вашему здоровью.</span>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Быстрые действия">
+  <a href="tel:+79672848999">Позвонить</a>
+  <a href="#steam">Меню</a>
+  <a href="https://yandex.ru/maps/org/tsentr_parovykh_kokteyley_apelsin_laundzh/71040804194/" target="_blank" rel="noopener">Маршрут</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
